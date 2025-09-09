@@ -1,0 +1,869 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    padding: 20px 40px;
+    background-color: #FFF9F4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_btns {
+    display: flex;
+    align-items: center;
+}
+
+.header_btn {
+    padding: 8px 20px;
+    border-radius: 50px;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #F58420;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+.header_btn:hover {
+    transform: scale(1.05);
+}
+
+.header_btn img {
+    margin-right: 10px;
+}
+
+.header_btn_2 {
+    background-color: transparent;
+    color: #462512;
+    border: 1px solid #462512;
+}
+
+.homePage {
+    display: flex;
+    position: relative;
+}
+
+.homePage_first {
+    background-image: url(./images/empty-stomatology-orthodontist-bright-office-room-with-nobody-it\ 1.png);
+    height: 490px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.homePage_content {
+    padding: 20px 40px;
+    width: 60%;
+    background-color: #ffffff53;
+    backdrop-filter: blur(11.3px);
+    position: relative;
+
+}
+
+.homePage_content h2 {
+    color: #303030;
+    font-weight: 800;
+    font-size: 16px;
+}
+
+
+.homePage_content p {
+    color: #4E4E4E;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.doctor_img {
+    position: absolute;
+    right: -120px;
+    top: -92px;
+
+}
+
+
+.consult-form {
+    background: #fff7f0;
+    padding: 30px;
+    border-radius: 10px;
+    width: 380px;
+    height: 100%;
+}
+
+.consult-form h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #303030;
+    margin-bottom: 8px;
+}
+
+.consult-form p {
+    font-size: 16px;
+    color: #303030;
+    margin-bottom: 20px;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+.form-input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1.5px solid #ddd;
+    border-radius: 30px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    outline: none;
+    transition: border 0.3s;
+}
+
+.form-input:focus {
+    border-color: #ff9900;
+}
+
+.captcha-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.captcha-box input {
+    flex: 1;
+    border-radius: 30px 0 0 30px;
+    border: 1.5px solid #ddd;
+    border-right: none;
+    padding: 12px 15px;
+    outline: none;
+}
+
+.captcha-code {
+    background: #3d1f0f;
+    color: #fff;
+    padding: 12px 30px;
+    font-size: 14px;
+    border-radius: 0 30px 30px 0;
+}
+
+.form-check {
+    font-size: 12px;
+    color: #444;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: flex-start;
+    gap: 6px;
+    line-height: 1.4;
+}
+
+.form-check input {
+    margin-top: 3px;
+}
+
+.form-check a {
+    color: #0077ff;
+    text-decoration: none;
+}
+
+.form-check a:hover {
+    text-decoration: underline;
+}
+
+.form-btn {
+    width: 100%;
+    background: #ff9900;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 14px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form-btn:hover {
+    background: #e68a00;
+}
+
+.home_slide {
+    display: flex;
+    gap: 20px;
+    padding: 10px 20px;
+    background-color: #FFF9F4;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    border-top: 1px solid #FFE0C4;
+}
+
+.home_slide_section {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.home_slide_section h6 {
+    white-space: nowrap;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.home_slide_section h6 span {
+    color: #F58420;
+}
+
+.home_slide_section img {
+    width: auto;
+    height: 30px;
+    margin-right: 10px;
+}
+
+
+
+.treatment_section {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    margin: 50px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+}
+
+.treatment-card {
+    display: flex;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    /* max-width: 640px;
+    width: 100%; */
+    border: 1px solid #FFE0C4;
+}
+
+.treatment-card img {
+    width: 50%;
+    object-fit: cover;
+}
+
+.treatment-content {
+    padding: 20px 25px;
+    width: 50%;
+}
+
+.treatment-content h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #222;
+}
+
+.treatment-content p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.treatment-content h4 {
+    font-size: 15px;
+    margin-bottom: 8px;
+    color: #222;
+}
+
+.treatment-content ul {
+    margin: 0 0 15px 18px;
+    padding: 0;
+    font-size: 14px;
+    color: #444;
+}
+
+.treatment-content ul li {
+    margin-bottom: 6px;
+}
+
+.price {
+    font-size: 13px;
+    color: #F58420;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.price-value {
+    font-size: 18px;
+    font-weight: bold;
+    color: #111;
+    margin-bottom: 15px;
+}
+
+.price-value span {
+    text-decoration-line: line-through;
+    font-weight: 400;
+    margin-left: 10px;
+}
+
+
+.Special_fixed {
+    display: flex;
+    justify-content: space-between;
+}
+
+.consult-btn {
+    background: #ff9900;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.consult-_buy_btn {
+    width: 60%;
+    height: 40px;
+}
+
+.consult-btn:hover {
+    background: #e68a00;
+}
+
+.sub_Headings {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.sub_Headings h2 {
+    font-weight: 700;
+    font-size: 24px;
+    color: #1A1A1A;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.sub_Headings p {
+    color: #1A1A1A;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.Transformations_section {
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+}
+
+.Transformations_child img {
+    height: 235px;
+    width: auto;
+}
+
+.Transformations_child div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Transformations_child span {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1A1A1A;
+}
+
+.Transformations_location_color {
+    color: #e68a00 !important;
+}
+
+.Clove_Dental_section {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    gap: 30px;
+}
+
+.Clove_Dental_section img {
+    width: 100%;
+}
+
+
+.accordion {
+    max-width: 600px;
+    margin: auto;
+}
+
+.accordion-item {
+    border-bottom: 1px solid #eee;
+    padding: 15px 0;
+    cursor: pointer;
+}
+
+.accordion-title {
+    font-weight: 600;
+    font-size: 16px;
+    color: #222;
+}
+
+.accordion-icon {
+    font-size: 22px;
+    color: #e67c23;
+    /* orange */
+    transition: transform 0.3s ease;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    color: #555;
+    font-size: 14px;
+    line-height: 1.5;
+    padding-right: 25px;
+}
+
+.accordion-item.active .accordion-content {
+    max-height: 200px;
+    /* expand */
+    margin-top: 10px;
+}
+
+.accordion-item.active .accordion-icon {
+    transform: rotate(45deg);
+}
+
+.Clove_Dental_section_content {
+    width: 100%;
+}
+
+
+.Clove_Dental_section_content_fixd {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.Patients_child img {
+    height: auto;
+    width: 270px;
+}
+
+.Patients_child div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Patients_child span {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1A1A1A;
+}
+
+.Patients_child span p {
+    font-size: 14px;
+    font-weight: 600;
+    color: #777777;
+}
+
+.appointment_form {
+    margin: 40px auto;
+    width: 100%;
+    background-color: #FFF9F4;
+    padding: 20px;
+    /* display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; */
+}
+
+.appointment_form h2 {
+    text-align: center;
+}
+
+.appointment_form_inputs {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+}
+
+.appointment_form_btn {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    gap: 30px;
+}
+
+.form-btn-submit {
+    width: auto;
+    padding: 10px 80px;
+    background-color: #F58420;
+}
+
+
+.Guidance_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.Guidance_form {
+    padding: 20px;
+}
+
+.Anniversary_list li {
+    margin: 10px 0;
+}
+
+.faq_section {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 0 40px;
+
+    margin-bottom: 50px;
+}
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #462512;
+}
+
+footer img {
+    height: 50px;
+    width: auto;
+}
+
+.footer_text {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: right; */
+    text-align: right;
+}
+
+.footer_text ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    justify-content: right;
+    margin-bottom: 10px;
+}
+
+.footer_text ul li a {
+    color: #ddd;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+    transition: .2s ease;
+}
+
+.footer_text ul li a:hover {
+    color: #fff;
+}
+
+.footer_text p {
+    border-top: 1px solid #ddd;
+    padding: 20px;
+    color: #ddd;
+    font-size: 14px;
+    font-weight: 400;
+    transition: .2s ease;
+}
+
+.footer_text p:hover {
+    color: #fff;
+}
+
+.tell_img {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .header_btn_one {
+        display: none;
+    }
+
+    header {
+        padding: 10px;
+    }
+
+    .logo {
+        width: auto;
+        height: 40px;
+    }
+
+    .homePage {
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .home_slide {
+        margin-top: 40px;
+    }
+
+    .treatment-card {
+        flex-direction: column;
+    }
+
+    .sub_Headings {
+        margin: 20px auto;
+    }
+
+    .sub_Headings h2 {
+        font-size: 20px;
+    }
+
+    .sub_Headings p {
+        font-size: 16px;
+
+    }
+
+
+
+    .treatment-card img {
+        width: 100%;
+    }
+
+    .treatment_section {
+        display: grid;
+        margin: 20px;
+        justify-content: space-between;
+    }
+
+    .treatment-content {
+        width: 100%;
+    }
+
+    .Transformations_child img {
+        height: 170px;
+    }
+
+    .Clove_Dental_section {
+        flex-direction: column-reverse;
+    }
+
+    .appointment_form_inputs {
+        flex-direction: column;
+    }
+
+    .Patients_child img {
+        width: 200px;
+    }
+
+    .appointment_form_btn {
+        flex-direction: column;
+    }
+
+    .Guidance_section {
+        flex-direction: column-reverse;
+    }
+
+    .faq_section {
+        flex-direction: column-reverse;
+        gap: 0;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    .footer_text ul {
+        margin-top: 10px;
+        justify-content: center
+    }
+
+    .footer_text p {
+        text-align: center;
+    }
+
+    .tell_img {
+        display: block;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        z-index: 9;
+
+    }
+
+    .homePage_content {
+        width: 100%;
+        padding: 20px 150px 20px 5px;
+    }
+
+    .doctor_img {
+        height: auto;
+        width: 220px;
+        right: 00px;
+        top: 45px;
+    }
+
+    .header_btn {
+        padding: 5px 20px;
+        font-size: 12px;
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .header_btn_one {
+        display: none;
+    }
+
+    header {
+        padding: 10px;
+    }
+
+    .logo {
+        width: auto;
+        height: 40px;
+    }
+
+    .homePage {
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .consult-form {
+        width: 100%;
+    }
+
+    .home_slide {
+        margin-top: 40px;
+    }
+
+    .treatment-card {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    /* .treatment-card {
+        width: 600px;
+    } */
+
+    .sub_Headings {
+        margin: 20px auto;
+    }
+
+    .sub_Headings h2 {
+        font-size: 20px;
+    }
+
+    .sub_Headings p {
+        font-size: 16px;
+
+    }
+
+
+
+    .treatment-card img {
+        width: 100%;
+    }
+
+
+    .treatment-content {
+        width: 100%;
+    }
+
+    .Transformations_child img {
+        height: 170px;
+    }
+
+    .Clove_Dental_section {
+        flex-direction: column-reverse;
+    }
+
+    .appointment_form_inputs {
+        flex-direction: column;
+    }
+
+    .Patients_child img {
+        width: 200px;
+    }
+
+    .appointment_form_btn {
+        flex-direction: column;
+    }
+
+    .Guidance_section {
+        flex-direction: column-reverse;
+    }
+
+    .faq_section {
+        flex-direction: column-reverse;
+        gap: 0;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    .footer_text ul {
+        margin-top: 10px;
+        justify-content: center
+    }
+
+    .footer_text p {
+        text-align: center;
+    }
+
+    .tell_img {
+        display: block;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        z-index: 9;
+
+    }
+
+    .homePage_content {
+        width: 100%;
+        padding: 20px 100px 20px 5px;
+    }
+
+    .doctor_img {
+        height: auto;
+        width: 310px;
+        right: 0px;
+        top: -90px;
+    }
+
+    /* .header_btn{
+        padding: 5px 20px;
+        font-size: 12px;
+    } */
+}
